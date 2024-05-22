@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cy:open": "cypress open",
-    "cy:test": "dotenv -e .env -- cross-var cypress run --record --key %CYPRESS_RECORD_KEY%"
+    "cy:test": "dotenv -e .env -- cross-var cypress run --browser chrome --record --key %CYPRESS_RECORD_KEY%"
   },
   "keywords": [],
   "author": "",
