@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "cy:test": "dotenv -e .env -- cross-var cypress run --record --key %CYPRESS_RECORD_KEY%"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "cross-env": "^7.0.3",
+    "cross-var": "^1.1.0",
     "cypress": "^13.10.0",
-    "dotenv": "^16.4.5"
+    "dotenv-cli": "^7.4.2"
   }
 }
