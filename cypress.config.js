@@ -1,8 +1,8 @@
 const { defineConfig } = require("cypress");
+require('dotenv').config();
 
 module.exports = defineConfig({
-  // TODO hide it
-  projectId: "a7bq2k",
+  projectId: process.env.projectId,
 
   e2e: {
     setupNodeEvents(on, config) {
